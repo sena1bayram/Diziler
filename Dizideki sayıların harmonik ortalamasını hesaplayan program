@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+      int[] list={1,2,3,4,8,2};
+      double sonuc=0.0;
+      for (int i=1;i<=list.length;i++)
+      {
+     sonuc+=(1.0)/i;
+
+      }
+      double ort=list.length/sonuc;
+        System.out.print("Ortalaması: "+ort);
+    }
+
+}
