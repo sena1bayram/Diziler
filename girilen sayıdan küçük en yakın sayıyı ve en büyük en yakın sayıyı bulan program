@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int[] list = {15,12,788,1,-1,-778,2,0};
+        Scanner input=new Scanner(System.in);
+        System.out.print("Sayı giriniz: ");
+        int sayi=input.nextInt();
+        int buyuk=0,kucuk=0;
+        Arrays.sort(list);
+        for (int i=0;i<list.length;i++)
+        {
+            if(list[i]>sayi)
+            {
+                buyuk=list[i];
+                kucuk=list[i-1];
+                break;
+            }
+        }
+        System.out.println("Girilen sayıdan küçük en yakın sayı : " + kucuk);
+        System.out.println("Girilen sayıdan büyük en yakın sayı : " + buyuk);
+
+    }
+
+}
